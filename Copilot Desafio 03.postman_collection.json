@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "642d20bf-4386-4dec-9f9c-0b23b4ea888b",
+		"name": "Copilot Desafio 03",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14161378"
+	},
+	"item": [
+		{
+			"name": "Register Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Ronyeri Marinho\",\n    \"email\": \"marinho@example.com\",\n    \"phone\": \"(81) 9.9832-2354\",\n    \"office\": \"Desenvolvedor de Software\",\n    \"wage\": 2599.00,\n    \"companyName\": \"Ustore\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
