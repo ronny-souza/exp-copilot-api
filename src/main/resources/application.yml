@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mariadb://localhost:3306/copilot?useTimezone=true&serverTimezone=UTC
+    url: jdbc:mariadb://${DB_HOST:localhost:3306}/${DB_NAME:copilot}?useTimezone=true&serverTimezone=UTC&CreateDatabaseIfNotExist=true
     username: ${DB_USERNAME:root}
     password: ${DB_PASSWORD}
     driver-class-name: org.mariadb.jdbc.Driver
