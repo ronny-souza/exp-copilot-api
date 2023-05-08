@@ -11,8 +11,8 @@ COPY --from=build /app/target/*.jar /app/app.jar
 
 ENV DB_HOST 127.0.0.1:3306
 ENV DB_NAME copilot
-ENV DB_USERNAME ronyeri
-ENV DB_PASSWORD ronyeri
+ENV DB_USERNAME root
+ENV DB_PASSWORD root
 
 EXPOSE 8080
 ENTRYPOINT ["java","-jar","app.jar"]
